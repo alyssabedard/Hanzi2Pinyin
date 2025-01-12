@@ -25,7 +25,8 @@ Screenshots If applicable, add screenshots to help explain your problem.
 **System Information:**
 - OS: [e.g. macOS, Linux, Windows]
 - mpv version: [e.g. 0.39.0]
-- mpv2anki script version [e.g. 1.1.0] (can be found inside `scripts/mpv2anki/metadata.lua`)
+- Hanzi2Ruby version [e.g. 1.1.0]  (`Tools > Hanzi2Ruby > About > Version`)
+
 
 **Additional context**
 Add any other context about the problem here.

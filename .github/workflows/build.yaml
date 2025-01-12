@@ -2,7 +2,7 @@
 #   1. It checks out the code at the commit where the tag was created
 #   2. Creates the build package using the latest state (with updated metadata)
 
-name: Build mpv Script Package
+name: Build Hanzi2Ruby Package
 
 on:
   push:
@@ -24,17 +24,15 @@ jobs:
 
       - name: Create Package
         run: |
-          mkdir -p build/mpv/scripts
-          cp mpv/input.conf build/mpv/
-          cp mpv/mpv.conf build/mpv/
-          cp -r mpv/scripts/mpv2anki build/mpv/scripts/
+          mkdir -p build/Hanzi2Ruby
+          cp -r addon/* build/Hanzi2Ruby/
           cd build
-          zip -r ../mpv2anki_${GITHUB_REF#refs/tags/v}.zip mpv/
+          zip -r "../Hanzi2Ruby_${GITHUB_REF#refs/tags/v}.zip" Hanzi2Ruby/
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: mpv2anki_${{ steps.get_version.outputs.VERSION }}.zip
+          files: Hanzi2Ruby_${{ steps.get_version.outputs.VERSION }}.zip
           body_path: CHANGELOG.md
           generate_release_notes: true
         env:
