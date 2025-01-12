@@ -87,9 +87,9 @@ Key benefits:
 - [ ] Jyutping and Cantonese support
 - [ ] Xiao'erjing (Xiaor jin/Xiaojing/Arabic-Persian script) support
 
-I plan on making additional Chinese language tools will be 
-released as separate add-ons to maintain simplicity and modular design as 
-I prefer single-purpose add-ons
+I plan on making additional Chinese language tools that will be 
+released as separate add-ons to maintain simplicity as 
+I prefer single-purpose add-ons.
 
 
 ## Why hanzi2ruby when there are other great add-ons?
@@ -125,15 +125,14 @@ It will be available in the [docs](docs) folder
 
 
 ## Credits
-### Libraries
-**jieba**
-- [PyPi](https://pypi.org/project/jieba/)
-- [GitHub](https://github.com/fxsjy/jieba)
 
-**pypinyin**
-- [PyPi](https://pypi.org/project/pypinyin/)
-- [GitHub](https://github.com/mozillazg/python-pinyin)
+### Libraries
+| Library | Links |
+|---------|-------|
+| jieba | [PyPi](https://pypi.org/project/jieba/), [GitHub](https://github.com/fxsjy/jieba) |
+| pypinyin | [PyPi](https://pypi.org/project/pypinyin/), [GitHub](https://github.com/mozillazg/python-pinyin) |
 
 ### Other
-**Anki SVG logo**
-- [Glutanimate](https://glutanimate.com/logos/ankiweb-rate.svg)
+| Description   | Source                                                        |
+|---------------|---------------------------------------------------------------|
+| Anki SVG logo | [Glutanimate](https://glutanimate.com/logos/ankiweb-rate.svg) |
