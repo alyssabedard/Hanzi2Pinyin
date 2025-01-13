@@ -14,8 +14,8 @@ For now :
 <img src="screenshots/demo-settings.gif" width="500" alt="Demo"/>
 <p>3. For any cards - Add pinyin/zhuyin (INSIDE <b>SentencePinyin</b> field!!!!!!)</p>
 <img src="screenshots/demo-zhuyin.gif" width="500" alt="Demo"/>
-<img src="screenshots/demo-sentencepinyin.gif" width="500" alt="Demo"/>
-<img src="screenshots/demo-sentencepinyin-html.gif" width="500" alt="Demo"/>
+<br><img src="screenshots/demo-sentencepinyin.gif" width="500" alt="Demo"/>
+<br><img src="screenshots/demo-sentencepinyin-html.gif" width="500" alt="Demo"/>
 <p>4. Voilà ! </p>
 <img src="screenshots/demo-liuqi.gif" width="500" alt="Demo"/>
 
