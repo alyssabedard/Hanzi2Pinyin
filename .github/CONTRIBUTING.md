@@ -1,7 +1,7 @@
 # Contributing
 
 ## How to contribute
-- [Fork](https://github.com/alyssabedard/Hanzi2Ruby/fork) the repository
+- [Fork](https://github.com/alyssabedard/Hanzi2Pinyin/fork) the repository
 - Create a new branch
 - Make your changes
 - Submit a pull request

@@ -25,7 +25,7 @@ Screenshots If applicable, add screenshots to help explain your problem.
 **System Information:**
 - OS: [e.g. macOS, Linux, Windows]
 - mpv version: [e.g. 0.39.0]
-- Hanzi2Ruby version [e.g. 1.1.0]  (`Tools > Hanzi2Ruby > About > Version`)
+- Hanzi2Pinyin version [e.g. 1.1.0]  (`Tools > Hanzi2Pinyin > About > Version`)
 
 
 **Additional context**

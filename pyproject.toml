@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "Hanzi2Pinyin"
+version = "1.0.0"
+description = "Anki addon that automatically converts Chinese characters (Hanzi) to ruby-annotated text with pinyin and zhuyin readings."
+authors = ["Alyssa Bédard"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/alyssabedard/Hanzi2Pinyin"
+documentation = "https://github.com/alyssabedard/Hanzi2Pinyin"
+# Tell Poetry you're using it for dependency management only, not for packaging the project
+package-mode = false
+
+# Tools only needed during development
+[tool.poetry.dependencies]
+python = "^3.12.3"
+anki = "^24.6.3"
+aqt = {extras = ["qt6"], version = "^24.6.3"}
+pypinyin = "^0.53.0"
+tomli = "^2.1.0"
+jieba = "^0.42.1"
+pycantonese = "^3.4.0"
+setuptools = "^75.6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+#monkeytype = "^23.3.0"
+mypy = "^1.13.0"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+test = "pytest"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
