@@ -44,17 +44,11 @@ _[Why Hanzi2Pinyin when there are other great add-ons?](#why-Hanzi2Pinyin-when-t
 ## Demo
 
 <div align="center"><br>
+    <img src="docs/screenshots/demo-pinyin.gif" width="800" alt="Demo of Hanzi2Pinyin"/>
    <img src="docs/screenshots/demo-sentencepinyin.gif" width="500" alt="Demo"/>
     <div>⬇️</div>
    <img src="docs/screenshots/demo-sentencepinyin-html.gif" width="400" alt="Demo"/>
 </div>
-
-<details>
-    <summary>Demo with Pinyin</summary>
-    <div align="center"><br>
-       <img src="docs/screenshots/demo-pinyin.gif" width="800" alt="Demo of Hanzi2Pinyin"/>
-    </div>
-</details>
 
 <details>
     <summary>Demo with Zhuyin</summary>
