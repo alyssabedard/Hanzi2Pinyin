@@ -4,7 +4,8 @@
 </div>
 
 
-- Link: https://addon-docs.ankiweb.net/sharing.html
+- https://addon-docs.ankiweb.net/sharing.html
+- https://ankiweb.net/shared/addons
 
 ### Title
 (A one-line description, less than 80 characters.)

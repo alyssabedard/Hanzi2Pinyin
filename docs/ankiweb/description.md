@@ -5,7 +5,7 @@
 
 ---
 
-<a href=""><img src="https://img.shields.io/badge/AnkiWeb-Rate-6cb5e7?style=for-the-badge&labelColor=grey&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNNjYuNTk3IDMxLjgwOGMtLjY0Ljc2My00LjQ1OC0xLjMzNi01LjQyNC0xLjA5NC0uOTY2LjI0Mi0zLjM0MyAzLjg5My00LjI2NyAzLjUyMS0uOTI0LS4zNzItLjEwOC00LjY1Mi0uNjM2LTUuNDk2LS41MjktLjg0NC00LjczNi0xLjk3Ny00LjY2OC0yLjk3LjA2OS0uOTk0IDQuMzkxLTEuNTQgNS4wMy0yLjMwNC42NC0uNzYzLjQxNy01LjExNSAxLjM4NC01LjM1Ny45NjYtLjI0MiAyLjgyIDMuNyAzLjc0NSA0LjA3My45MjMuMzcyIDQuOTkzLTEuMTg0IDUuNTIyLS4zNC41MjkuODQ0LTIuNjQ4IDMuODI2LTIuNzE2IDQuODItLjA2OC45OTMgMi42NyA0LjM4MyAyLjAzIDUuMTQ3eiIgc3R5bGU9ImZpbGw6IzAwODRkZDtzdHJva2U6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MiIvPjxwYXRoIGQ9Ik01OS43MTIgODIuMzU2Yy0yLjMzNSAyLjc4OS0xNi4yOC00Ljg3Ny0xOS44MDgtMy45OTMtMy41MjguODgzLTEyLjIxMiAxNC4yMTgtMTUuNTg2IDEyLjg2LTMuMzc0LTEuMzYtLjM5My0xNi45OS0yLjMyMy0yMC4wNzMtMS45MzEtMy4wODItMTcuMjk3LTcuMjItMTcuMDQ3LTEwLjg1LjI1LTMuNjI4IDE2LjAzNy01LjYyMyAxOC4zNzItOC40MTIgMi4zMzUtMi43ODggMS41MjMtMTguNjggNS4wNS0xOS41NjQgMy41MjktLjg4NCAxMC4zMDUgMTMuNTE0IDEzLjY3OCAxNC44NzMgMy4zNzQgMS4zNTkgMTguMjM4LTQuMzI1IDIwLjE2OC0xLjI0MyAxLjkzMSAzLjA4My05LjY2OSAxMy45NzYtOS45MTggMTcuNjA1LS4yNSAzLjYyOCA5Ljc0OCAxNi4wMDggNy40MTQgMTguNzk3eiIgc3R5bGU9ImZpbGw6IzAwODRkZDtzdHJva2U6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MiIvPjwvc3ZnPg==" /></a>
+<a href="https://ankiweb.net/shared/review/77106192"><img src="https://img.shields.io/badge/AnkiWeb-Rate-6cb5e7?style=for-the-badge&labelColor=grey&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNNjYuNTk3IDMxLjgwOGMtLjY0Ljc2My00LjQ1OC0xLjMzNi01LjQyNC0xLjA5NC0uOTY2LjI0Mi0zLjM0MyAzLjg5My00LjI2NyAzLjUyMS0uOTI0LS4zNzItLjEwOC00LjY1Mi0uNjM2LTUuNDk2LS41MjktLjg0NC00LjczNi0xLjk3Ny00LjY2OC0yLjk3LjA2OS0uOTk0IDQuMzkxLTEuNTQgNS4wMy0yLjMwNC42NC0uNzYzLjQxNy01LjExNSAxLjM4NC01LjM1Ny45NjYtLjI0MiAyLjgyIDMuNyAzLjc0NSA0LjA3My45MjMuMzcyIDQuOTkzLTEuMTg0IDUuNTIyLS4zNC41MjkuODQ0LTIuNjQ4IDMuODI2LTIuNzE2IDQuODItLjA2OC45OTMgMi42NyA0LjM4MyAyLjAzIDUuMTQ3eiIgc3R5bGU9ImZpbGw6IzAwODRkZDtzdHJva2U6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MiIvPjxwYXRoIGQ9Ik01OS43MTIgODIuMzU2Yy0yLjMzNSAyLjc4OS0xNi4yOC00Ljg3Ny0xOS44MDgtMy45OTMtMy41MjguODgzLTEyLjIxMiAxNC4yMTgtMTUuNTg2IDEyLjg2LTMuMzc0LTEuMzYtLjM5My0xNi45OS0yLjMyMy0yMC4wNzMtMS45MzEtMy4wODItMTcuMjk3LTcuMjItMTcuMDQ3LTEwLjg1LjI1LTMuNjI4IDE2LjAzNy01LjYyMyAxOC4zNzItOC40MTIgMi4zMzUtMi43ODggMS41MjMtMTguNjggNS4wNS0xOS41NjQgMy41MjktLjg4NCAxMC4zMDUgMTMuNTE0IDEzLjY3OCAxNC44NzMgMy4zNzQgMS4zNTkgMTguMjM4LTQuMzI1IDIwLjE2OC0xLjI0MyAxLjkzMSAzLjA4My05LjY2OSAxMy45NzYtOS45MTggMTcuNjA1LS4yNSAzLjYyOCA5Ljc0OCAxNi4wMDggNy40MTQgMTguNzk3eiIgc3R5bGU9ImZpbGw6IzAwODRkZDtzdHJva2U6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MiIvPjwvc3ZnPg==" /></a>
 <a href="https://github.com/alyssabedard/Hanzi2Pinyin"><img src="https://img.shields.io/badge/GitHub-Documentation-%23B8A7E3?style=for-the-badge&labelColor=grey&logo=github" /></a>
 <a href="https://github.com/alyssabedard/Hanzi2Pinyin/issues"><img src="https://img.shields.io/badge/GitHub-Issues-%23FFC0CB?style=for-the-badge&labelColor=grey&logo=github" /></a>
 <a href="https://github.com/alyssabedard/Hanzi2Pinyin/discussions"><img src="https://img.shields.io/badge/GitHub-Discussions-blue?style=for-the-badge&labelColor=grey&logo=github" /></a>
@@ -28,7 +28,7 @@ This helps improve the add-on for everyone (as someone might run through the sam
 proper attention.
 
 This add-on is primarily developed and tested on macOS. If you encounter any 
-OS-specific problem, please raise an [Issue](https://github.com/alyssabedard/Hanzi2Pinyin/issues) or start a [Discussion](https://github.com/alyssabedard/Hanzi2Pinyin/discussion)
+OS-specific problem, please raise an [Issue](https://github.com/alyssabedard/Hanzi2Pinyin/issues) or start a [Discussion](https://github.com/alyssabedard/Hanzi2Pinyin/discussions)
 
 > ⚠️ For the [ruby](https://en.wikipedia.org/wiki/Ruby_character) annotation to work please 
 > read the [Anki documentation on Ruby characters](https://docs.ankiweb.net/templates/fields.html?highlight=furigana#ruby-characters) 
@@ -37,35 +37,18 @@ OS-specific problem, please raise an [Issue](https://github.com/alyssabedard/Han
 
 ## Demo
 
-<div align="center"><br>
-
-   <img src="../screenshots/demo-liuqi.gif" width="400" alt="Demo"/>
-</div>
-
-[//]: # (![alt text]&#40;https://raw.githubusercontent.com/alyssabedard/mpv2anki/master/docs/screenshots/demo.gif&#41;)
+<img src="https://raw.githubusercontent.com/alyssabedard/Hanzi2Ruby/master/docs/screenshots/demo-liuqi.gif" width="400" alt="Demo" style="display: block; margin: auto;"/>
+<br>
+<img src="https://raw.githubusercontent.com/alyssabedard/Hanzi2Ruby/master/docs/screenshots/demo-sentence-only.gif" width="400" alt="Demo" style="display: block; margin: auto;"/>
 
 
+More demo [here](https://github.com/alyssabedard/Hanzi2Pinyin/blob/master/docs/quick_start_guide.md)
 
-### Example
+## Planned Features
+- Jyutping and Cantonese support
+- Xiao'erjing (Xiaor jin/Xiaojing/Arabic-Persian script) support
 
-| Type          | Pinyin                                                                        | Zhuyin                                                                         |
-|---------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| Hanzi         | 你好                                                                            | 你好                                                                             |
-| Hanzi to Ruby | `你[nǐ]好[hǎo]`                                                                 | `你[ㄋㄧˇ]好[ㄏㄠˇ]`                                                                 |
-| HTML Code     | `<ruby>你<rt>nǐ</rt></ruby><ruby>好<rt>hǎo</rt></ruby>`                         | `<ruby>你<rt>ㄋㄧˇ</rt></ruby><ruby>好<rt>ㄏㄠˇ</rt></ruby>`                         |
-| HTML Output   | <div align="center"><ruby>你<rt>nǐ</rt></ruby><ruby>好<rt>hǎo</rt></ruby></div> | <div align="center"><ruby>你<rt>ㄋㄧˇ</rt></ruby><ruby>好<rt>ㄏㄠˇ</rt></ruby></div> |
-
-
-## Features 
-
-| Feature                        | Status |
-|--------------------------------|--------|
-| Pinyin                         | ✅      |
-| Zhuyin/Bopomofo                | ✅      |
-| Anki Note Type for this add-on | ✅      |
-| Bulk add/remove                | 🔄     |
-| Jyutping/Cantonese             | 🔄     |
-| Xiao'erjing                    | 🔄     |
-
-> 🔄 = Planned feature
-
+<br>
+加油
+<br>
+<img src="https://raw.githubusercontent.com/alyssabedard/Hanzi2Ruby/master/docs/screenshots/liuqi-jiayou.gif" width="200" alt="Demo"/>

@@ -26,12 +26,12 @@ feature-requests = "https://github.com/alyssabedard/Hanzi2Pinyin/issues"
 discussions = "https://github.com/alyssabedard/Hanzi2Pinyin/discussions"
 
 [project.anki]
-addon-id = ""
+addon-id = "77106192"
 min-version = "23.10"       # Oldest supported Anki version
 max-version = "24.12"       # Latest supported Anki version
 tested-version = "24.12"    # Manually update this when tested
-conflicts = []              # List any conflicting addon IDs
-#dependencies = []          # List any required addon ID
+conflicts = []              # List of any conflicting addon IDs
+#dependencies = []          # List of any required addon ID
 
 [project.maintainers]
 primary = "Alyssa Bédard"

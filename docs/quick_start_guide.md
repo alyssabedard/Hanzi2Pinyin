@@ -1,25 +1,33 @@
-
 <div align="center">
 <h1 style="font-family: monospace;">Hanzi2Pinyin - Quick Start Guide</h1>
-🚧 COMING SOON !!!  🚧 
 </div>
 
-For now :
+### 1. Import [THIS](https://github.com/alyssabedard/Hanzi2Pinyin-notetype) note type
+For proper display of Hanzi with Pinyin/Zhuyin (ruby text), you'll need to import [this](https://github.com/alyssabedard/Hanzi2Pinyin-notetype)
+Anki note type. 
+When imported, you'll find two example cards demonstrating the functionality.
 
-<div align="center">
-<p>1. Import <a href="https://github.com/alyssabedard/Hanzi2Pinyin-notetype">THIS</a> Anki note type for Hanzi2Pinyin add-on</p>
-<p>You should find 2 example cards inside !! </p>
-<img src="screenshots/demo-import-notetype.gif" width="500" alt="Demo"/>
-<p>2. Optional - How to change phonetics</p>
-<img src="screenshots/demo-settings.gif" width="500" alt="Demo"/>
-<p>3. For any cards - Add pinyin/zhuyin (INSIDE <b>SentencePinyin</b> field!!!!!!)</p>
-<img src="screenshots/demo-zhuyin.gif" width="500" alt="Demo"/>
-<br><img src="screenshots/demo-sentencepinyin.gif" width="500" alt="Demo"/>
-<br><img src="screenshots/demo-sentencepinyin-html.gif" width="500" alt="Demo"/>
-<p>4. Voilà ! </p>
-<img src="screenshots/demo-liuqi.gif" width="500" alt="Demo"/>
+![Demo](screenshots/demo-import-notetype.gif)
+
+### 2. Optional - Change the phonetics
+Zhuyin or Pinyin (Pinyin by default).
+
+![Demo](screenshots/demo-settings.gif)
 
 
-</div>
+### 3. Add your chinese text inside `SentencePinyin` and click the `中[zhōng]` button
+⚠️ The Note type will read the Ruby characters from the `SentencePinyin` field.
+
+![Demo](screenshots/demo-zhuyin.gif)
+
+![Demo](screenshots/demo-sentencepinyin.gif)
+
+![Demo](screenshots/demo-sentencepinyin-html.gif)
+
+
+### 4. Voilà 
+
+![demo](screenshots/demo-liuqi.gif)
+
 
 
