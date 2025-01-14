@@ -1,7 +1,3 @@
-# ==================================================================
-# `make help` to see commands
-# ==================================================================
-
 # Detect operating system
 ifeq ($(OS),Windows_NT)
     DETECTED_OS := Windows
@@ -56,7 +52,7 @@ endif
 
 .DEFAULT_GOAL := help
 
-.PHONY: help sync anki sync-and-run clean-deps install-deps update-deps  check-os tag retag
+.PHONY: help sync anki sync-and-run clean-deps install-deps update-deps  check-os tag retag ankiaddon check-zip check-ankiaddon check-contents
 
 help:
 	@echo ""
@@ -79,6 +75,8 @@ help:
 	@echo "$(YELLOW)GitHub Releases:$(NC)"
 	@echo "  make tag   		- Create a new tag (GitHub workflows)"
 	@echo "  make retag  		- Delete and recreate a tag (GitHub workflows)"
+	@echo "  make ankiaddon"
+	@echo "  make check-zip"
 	@echo ""
 
 
@@ -173,3 +171,23 @@ tag:
 	else \
 		echo "No version provided"; \
 	fi
+
+ankiaddon:
+	@echo "$(BLUE)Creating .ankiaddon package...$(NC)"
+	@find addon -type d -name "__pycache__" -exec rm -rf {} +
+	cd addon && zip -r ../Hanzi2Pinyin.ankiaddon * -x "**/__pycache__/*"
+	@echo "$(GREEN)✨ Created Hanzi2Pinyin.ankiaddon ✨$(NC)"
+
+# Command to verify contents
+check-contents:
+	@echo "$(BLUE)Checking .ankiaddon contents...$(NC)"
+	unzip -l Hanzi2Pinyin.ankiaddon
+
+check-zip:
+	@echo "$(BLUE)Creating check zip file...$(NC)"
+	cd addon && zip -r ../addon_check.zip * --exclude "*__pycache__*" "*.pyc"
+	@echo "$(GREEN)✨ Created addon_check.zip for verification ✨$(NC)"
+
+check-ankiaddon:
+	@echo "$(BLUE)Checking .ankiaddon contents...$(NC)"
+	unzip -l Hanzi2Pinyin.ankiaddon
