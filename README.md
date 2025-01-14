@@ -9,8 +9,8 @@
 </div>
 
 ## Description
-This [Anki](https://apps.ankiweb.net/) add-on lets you add Pinyin and Zhuyin readings above Chinese characters 
-(Hanzi) in **any field** name.
+This [Anki](https://apps.ankiweb.net/) add-on lets you add **Pinyin** and **Zhuyin** readings above Chinese characters 
+(Hanzi) in **any field**.
 
 It works by converting your Chinese text into [ruby](https://en.wikipedia.org/wiki/Ruby_character) annotations, where 
 the Pinyin appears as small text 
@@ -25,7 +25,7 @@ _[Why Hanzi2Pinyin when there are other great add-ons?](#why-Hanzi2Pinyin-when-t
  
 
 
-> _Need help? Want to raise an issue? Looking for documentation? See [Contributing & Support](#contributing--support)_
+_Looking for the Quick Start Guide? Need help? Want to raise an issue? Looking for documentation? See [Contributing & Support](#contributing--support)_
 
 <div align="center">
 <b>Example</b>

@@ -12,28 +12,26 @@
 
 ## Description
 This [Anki](https://apps.ankiweb.net/) add-on lets you add Pinyin and Zhuyin readings above Chinese characters 
-(Hanzi) in **any field** name.
+(Hanzi) in **any field**.
 
 It works by converting your Chinese text into [ruby](https://en.wikipedia.org/wiki/Ruby_character) annotations, where 
 the Pinyin appears as small text 
 above the original characters, making it easier to read and study Chinese text.
 
+## Usage
 - Quick start guide [here](https://github.com/alyssabedard/Hanzi2Pinyin/blob/master/docs/quick_start_guide.md)
 - Documentation [here](https://github.com/alyssabedard/Hanzi2Pinyin)
 
-## Important Note
+> ⚠️ For the [ruby](https://en.wikipedia.org/wiki/Ruby_character) annotation to work
+> use this [Anki note type](https://github.com/alyssabedard/Hanzi2Pinyin-notetype) made specifically for this add-on. 
+> 
+> More info here: [Anki documentation on Ruby characters](https://docs.ankiweb.net/templates/fields.html?highlight=furigana#ruby-characters) 
+
+## Review and Support
 ⚠️ Before giving this add-on a negative rating, please report any issues on 
 GitHub: [Issue Tracker](https://github.com/alyssabedard/Hanzi2Pinyin/issues).
-This helps improve the add-on for everyone (as someone might run through the same issue as you!) and ensures your problem gets 
-proper attention.
-
-This add-on is primarily developed and tested on macOS. If you encounter any 
-OS-specific problem, please raise an [Issue](https://github.com/alyssabedard/Hanzi2Pinyin/issues) or start a [Discussion](https://github.com/alyssabedard/Hanzi2Pinyin/discussions)
-
-> ⚠️ For the [ruby](https://en.wikipedia.org/wiki/Ruby_character) annotation to work please 
-> read the [Anki documentation on Ruby characters](https://docs.ankiweb.net/templates/fields.html?highlight=furigana#ruby-characters) 
-> OR use this basic [Anki note type](https://github.com/alyssabedard/Hanzi2Pinyin-notetype) made specifically for this add-on.
-
+This helps improve the add-on for everyone (as someone might run through the same issue as you!).
+For support check the documentation page.
 
 ## Demo
 
@@ -42,11 +40,12 @@ OS-specific problem, please raise an [Issue](https://github.com/alyssabedard/Han
 <img src="https://raw.githubusercontent.com/alyssabedard/Hanzi2Ruby/master/docs/screenshots/demo-sentence-only.gif" width="400" alt="Demo" style="display: block; margin: auto;"/>
 
 
-More demo [here](https://github.com/alyssabedard/Hanzi2Pinyin/blob/master/docs/quick_start_guide.md)
+More demo on the Documentation and Quick Start Guide page.
 
 ## Planned Features
 - Jyutping and Cantonese support
 - Xiao'erjing (Xiaor jin/Xiaojing/Arabic-Persian script) support
+- Bulk add/remove 
 
 <br>
 加油
