@@ -7,6 +7,7 @@
 <div align="center"><br>
     <img src="docs/screenshots/demo-liuqi.gif" width="600" alt="Demo of Hanzi2Pinyin"/>
 </div>
+<br>
 <div align="center">
 💜 For the <span style="color:#CBC3E3;">Quick Start Guide</span> click <a style="color:#9c87db;" href="https://github.com/alyssabedard/Hanzi2Pinyin/blob/master/docs/quick_start_guide.md">here</a>💜
 </div>
