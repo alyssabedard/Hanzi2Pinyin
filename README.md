@@ -11,6 +11,9 @@
 <div align="center">
 💜 For the <span style="color:#CBC3E3;">Quick Start Guide</span> click <a style="color:#9c87db;" href="https://github.com/alyssabedard/Hanzi2Pinyin/blob/master/docs/quick_start_guide.md">here</a>💜
 </div>
+<div align="center">
+To download the companion Anki note type click <a style="color:#9c87db;" href="https://github.com/alyssabedard/Hanzi2Pinyin-notetype">here</a>
+</div>
 
 
 ## Description
