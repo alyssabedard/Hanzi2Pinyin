@@ -82,6 +82,7 @@ _Looking for the Quick Start Guide? Need help? Want to raise an issue? Looking f
 Key benefits:
 - Works with any field name of your choosing (No restrictions)
 - Simple and reliable functionality
+- Support both Simplified and Traditional Chinese Characters 
 
 ### Planned Features
 
