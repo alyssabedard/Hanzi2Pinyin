@@ -86,12 +86,17 @@ Key benefits:
 
 ### Planned Features
 
-| Status | Feature | Details |
-|--------|---------|----------|
-| 🔄 | Bulk add/remove | Available in tools menu |
-| 🔄 | Jyutping and Cantonese | Support for Cantonese pronunciation |
-| 🔄 | Xiao'erjing | Support for Arabic-Persian script (also known as Xiaor jin/Xiaojing) |
+| Status | Feature                | Details                                                              |
+|--------|------------------------|----------------------------------------------------------------------|
+| 🔄     | Bulk add/remove        | Available in tools menu                                              |
+| 🔄     | Jyutping and Cantonese | Support for Cantonese pronunciation                                  |
+| 🔄     | Xiao'erjing            | Support for Arabic-Persian script (also known as Xiaor jin/Xiaojing) |
+| 🔄     | Sandhi                 | Support for phonological changes between adjacent tones _(Note 1)_   |
 
+> Note 1: Sandhi refers to how tones change when certain tones/words are next to each other in 
+> speech. For example, in Mandarin, when a hanzi with the third 
+> tone is followed by another hanzi with the third tone, 
+> the first hanzi changes to second tone instead.
 
 I plan on making additional Chinese language tools that will be 
 released as separate add-ons to maintain simplicity as 
