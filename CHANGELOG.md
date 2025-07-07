@@ -1,6 +1,6 @@
 
-## [1.1.0]
+## [2025.07.06]
 ###  Changed
-- Documentation and quick start guide
+- Quick fix - Updated supported Anki versions
 
 
