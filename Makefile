@@ -138,7 +138,7 @@ sync-and-run: sync anki
 # It will prompt: Enter version (e.g., 1.0.0):
 # Will delete existing tag and create new one
 retag:
-	@read -p "Enter version (e.g., 1.0.0): " version; \
+	@read -p "Enter version (e.g., 2025.11.02): " version; \
 	if [ -n "$$version" ]; then \
 		echo "Deleting tag v$$version..."; \
 		git push --delete origin "v$$version" 2>/dev/null || echo "Remote tag doesn't exist"; \

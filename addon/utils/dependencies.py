@@ -8,6 +8,8 @@
 
 from pathlib import Path
 import sys
+import logging
+logging.basicConfig(level=logging.INFO)
 
 # Path resolution for dependencies
 # Path(__file__)              -> /path/to/addon/utils/dependencies.py
@@ -39,7 +41,10 @@ try:
     import jieba
     # import pycantonese
 
-    print("[Hanzi2Pinyin]: Successfully imported pypinyin, jieba")
+
+    logging.info("[Hanzi2Pinyin] - Successfully imported pypinyin, jieba")
+    #print("[Hanzi2Pinyin]: Successfully imported pypinyin, jieba")
     # print("[Hanzi2Pinyin]: Successfully imported pypinyin, jieba, pycantonese")
 except ImportError as e:
-    print(f"[Hanzi2Pinyin]: Error importing pypinyin: {e}")
+    #print(f"[Hanzi2Pinyin]: Error importing pypinyin: {e}")
+    logging.info(f"[Hanzi2Pinyin] - Error importing pypinyin: {e}")

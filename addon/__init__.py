@@ -14,10 +14,18 @@
 # Copyright (c) 2025 Alyssa Bédard
 # ==================================================================
 
-DEBUG = True  # Set to False in production
+import logging
+
+DEBUG = False  # Set to False in production
+if DEBUG:
+    print("[Hanzi2Pinyin] Debug features enabled")
+    #log.setLevel(logging.DEBUG)
 
 
 import sys
+logging.basicConfig(level=logging.INFO)
+
+
 from pathlib import Path
 
 # Return absolute path to the directory
@@ -93,9 +101,17 @@ def init_addon():
         if mw is None:
             return  # Exit early if no Anki window
 
+        # log = getattr(mw.addonManager, "getLogger", logging.getLogger)(__name__)
+
+        log = mw.addonManager.get_logger(__name__)
+        logs_path = mw.addonManager.logs_folder(__name__)
+        log.info(f"Your logs will be stored in: {logs_path} ")
+
         # Check version compatibility before initializing
+        log.info("Checking Anki version...")
         from .utils.versions import check_anki_version
         if not check_anki_version():
+            log.info("Anki version not supported!")
             return
 
         from aqt.qt import QMenu, QAction
@@ -185,5 +201,5 @@ def init_addon():
         # When we are running tests or we are outside Anki env
         pass
 
-
+logging.info("[Hanzi2Pinyin] - Initialize the addon's menu items and buttons in Anki's interface...")
 init_addon()
