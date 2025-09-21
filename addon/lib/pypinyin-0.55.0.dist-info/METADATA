@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: pypinyin
-Version: 0.54.0
+Version: 0.55.0
 Summary: 汉字拼音转换模块/工具.
 Home-page: https://github.com/mozillazg/python-pinyin
 Author: mozillazg, 闲耘
