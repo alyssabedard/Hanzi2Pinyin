@@ -46,13 +46,16 @@ The `requirements.txt` is used for bundling dependencies in `addon/lib/` directo
 
 ## Running Anki with Debug Console
 
-For development, it's recommended to run Anki from the terminal to see debug output:
+For development, run Anki from the terminal to see debug output:
 
 | OS | Command |
 |---------|-------------|
-| macOS | `/Applications/Anki.app/Contents/MacOS/anki` |
+| macOS | `/Library/Application Support/AnkiProgramFiles/.venv/bin/anki`|
 | Linux | `anki` |
 | Windows | `"C:\Program Files\Anki\anki.exe"` |
+
+macOS- before Anki launcher: `/Applications/Anki.app/Contents/MacOS/anki` 
+
 
 ## Packaging
 

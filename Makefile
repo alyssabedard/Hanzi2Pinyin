@@ -1,4 +1,6 @@
 # Detect operating system
+# https://docs.ankiweb.net/files.html
+# https://docs.ankiweb.net/files.html#program-files
 ifeq ($(OS),Windows_NT)
     DETECTED_OS := Windows
     # Windows paths
@@ -8,7 +10,7 @@ ifeq ($(OS),Windows_NT)
     CP_CMD := xcopy /E /I /Y
     MKDIR_CMD := mkdir
     RMDIR_CMD := rmdir /s /q
-    # Windows color codes (if using PowerShell)
+    # Windows color codes
     BLUE := [34m
     YELLOW := [33m
     GREEN := [32m
@@ -29,7 +31,9 @@ else
         DETECTED_OS := MacOS
         # MacOS paths
         ANKI_ADDON_DIR := $(HOME)/Library/Application Support/Anki2/addons21
-        ANKI_PATH := /Applications/Anki.app/Contents/MacOS/anki
+        # Anki Path Before Launcher
+        #ANKI_PATH := /Applications/Anki.app/Contents/MacOS/anki
+        ANKI_PATH := $(HOME)/Library/Application Support/AnkiProgramFiles/.venv/bin/anki
         RM_CMD := rm -rf
         CP_CMD := cp -r
         MKDIR_CMD := mkdir -p
@@ -135,7 +139,7 @@ sync-and-run: sync anki
 
 
 # Command to delete and recreate a tag
-# It will prompt: Enter version (e.g., 1.0.0):
+# It will prompt: Enter version (e.g., 2025.11.02):
 # Will delete existing tag and create new one
 retag:
 	@read -p "Enter version (e.g., 2025.11.02): " version; \
