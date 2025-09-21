@@ -7,19 +7,20 @@ readme = "README.md"
 license = "MIT"
 homepage = "https://github.com/alyssabedard/Hanzi2Pinyin"
 documentation = "https://github.com/alyssabedard/Hanzi2Pinyin"
-# Tell Poetry you're using it for dependency management only, not for packaging the project
+# Tell Poetry using just dependency management only, not for packaging the project
 package-mode = false
 
-# Tools only needed during development
+# Tools for development
 [tool.poetry.dependencies]
-python = "^3.12.3"
-anki = "^25.02.5"
-aqt = {extras = ["qt6"], version = "^25.7.1"}
-pypinyin = "^0.53.0"
-tomli = "^2.1.0"
+python = "^3.13"
+anki = "^25.09.2"
+aqt = {extras = ["qt6"], version = "^25.9.2"}
+pypinyin = "^0.55.0"
+# pypinyin = "^0.53.0"
+#tomli = "^2.1.0"
 jieba = "^0.42.1"
 pycantonese = "^3.4.0"
-setuptools = "^75.6.0"
+setuptools = "^80.9.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"

@@ -8,7 +8,7 @@
 # ==================================================================
 from aqt.utils import showText
 from pathlib import Path
-import tomli
+from  tomllib import load
 
 
 class AddonInfo:
@@ -34,7 +34,7 @@ class AddonInfo:
         """
         # Read the TOML file
         with open(self.toml_path, "rb") as f:
-            data = tomli.load(f)
+            data = load(f)
 
         # Get the main sections using get() to provide empty dict if missing
         project = data.get("project", {})
@@ -43,8 +43,8 @@ class AddonInfo:
         # maintainers = project.get("maintainers", {})
 
         # Basic project information
-        self.name = project.get("name", "Unnamed Project")
-        self.version = project.get("version", "0.1.0")
+        self.name = project.get("name", "")
+        self.release = project.get("release", "")
         self.description = project.get("description", "")
         self.authors = project.get("authors", [])
         self.license = project.get("license", "")
@@ -88,7 +88,7 @@ class AddonInfo:
         <div class="title">{self.name}</div>
 
         <div class="content">
-            <p><strong>Version:</strong> {self.version}</p>
+            <p><strong>Addon version:</strong> {self.release}</p>
             <p><strong>Description:</strong> {self.description}</p>
             <p><strong>Author:</strong> {", ".join(self.authors)}</p>
 
@@ -99,10 +99,10 @@ class AddonInfo:
             <p>💡 <a href="{self.discussions}">Discussions, need help?</a></p>
 
             <p><strong>Technical Details:</strong></p>
-            <p>License: {self.license}</p>
             <p>Add-on ID: {self.addon_id}</p>
-            <p>Minimum Anki: {self.min_version}</p>
-            <p>Tested on: {self.tested_version}</p>
+            <p>Oldest supported Anki version for this addon release: {self.min_version}</p>
+            <p>Tested on Anki version: {self.tested_version}</p>
+            <p>License: {self.license}</p>
         </div>
         """
 
@@ -126,10 +126,9 @@ class AddonInfo:
         """
         return f"""
         Project: {self.name}
-        Version: {self.version}
+        Version: {self.release}
         Description: {self.description}
         Authors: {', '.join(self.authors)}
-        Maintainer: {self.primary_maintainer}
 
         Anki Details:
         - Addon ID: {self.addon_id}

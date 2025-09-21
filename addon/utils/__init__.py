@@ -2,7 +2,7 @@
 # addon/utils/
 # ==================================================================
 # Helper functions or utilities that perform general tasks
-# unrelated to the business logic
+# unrelated to the logic
 # ==================================================================
 from .dependencies import pinyin, Style, jieba
 from .exceptions import CardOperationError, CardNotFoundError

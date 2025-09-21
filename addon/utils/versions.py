@@ -7,100 +7,48 @@
 # ==================================================================
 
 from aqt import mw
-from aqt.utils import showWarning
+from aqt.utils import showInfo
 from anki.utils import point_version
-from .about import AddonInfo
-import re
-import logging
-log = getattr(mw.addonManager, "getLogger", logging.getLogger)(__name__)
+
+from .. import log
+from .. import ABOUT
 
 
-def get_point_version(version_str: str) -> int:
-    """
-    Convert version string to point version number.
-    Handles:
-    - Anki format (23.10 → 2310)
-    - Poetry constraints (^25.2 → 2502)
-    - Tested version (25.2.5 → 2502)
-    """
-    # Strip constraint symbols (^~>=<) and patch versions
-    clean_version = re.sub(r'[\^~>=<]', '', version_str).split('.')
+#TESTED_ANKI_VERSION = "25.07"
+TESTED_ANKI_VERSION = ABOUT.tested_version
+ADDON_NAME = ABOUT.name
+KEY = f"{ADDON_NAME}_addon_warning_{TESTED_ANKI_VERSION.replace('.', '')}"
 
-    if len(clean_version) >= 2:
-        year = int(clean_version[0])
-        month = int(clean_version[1])
-        return (year * 100) + month
-    raise ValueError(f"Unsupported version format: {version_str}")
+def is_first_run_for_version():
+    # Load the config dictionary for the addon
+    config = mw.addonManager.getConfig(ADDON_NAME)
+    # Return false if first run
+    return not config.get(KEY, False)
 
+def set_warned_flag():
+    # Load the config dictionary for the addon
+    config = mw.addonManager.getConfig(ADDON_NAME)
+    config[KEY] = True
+    # Write the updated config back to Anki’s profile storage
+    # so it persists between sessions
+    mw.addonManager.writeConfig(ADDON_NAME, config)
 
-def calculate_max_version(constraint: str) -> str:
-    """
-    Convert Poetry constraint to Anki-compatible max version.
-    Examples:
-    "^25.2" → "25.12" (full year support)
-    "~25.2" → "25.8" (6 months support)
-    "25.2" → "25.2" (exact version)
-    """
-    log.info("Constraint: %r", getattr(constraint, "__dict__", repr(constraint)))
-    if constraint.startswith('^'):
-        year = constraint.split('.')[0].lstrip('^')
-        return f"{year}.12"
-    elif constraint.startswith('~'):
-        year, month = constraint.lstrip('~').split('.')[:2]
-        return f"{year}.{min(int(month) + 6, 12)}"
-    else:
-        return constraint.split('.')[0] + '.' + constraint.split('.')[1]
-
+def to_readable(v):
+    year = v // 10000
+    month = (v // 100) % 100
+    #patch = v % 100
+    return f"{year}.{month:02d}"
 
 def check_anki_version() -> bool:
-    addon_info = AddonInfo()
-    log.info("Addon info: %r", getattr(addon_info, "__dict__", repr(addon_info)))
-    current = point_version()
-    log.info("Current point version (YYMMPatch): %r", getattr(current, "__dict__", repr(current)))
+    anki_curr_version = to_readable(point_version())
 
-    try:
-
-        # Get base minimum version (always required)
-        min_point = get_point_version(addon_info.min_version)
-
-        # Calculate effective max version
-        max_version = (calculate_max_version(addon_info.max_version)
-                       if any(c in addon_info.max_version for c in '^~')
-                       else addon_info.max_version)
-        max_point = get_point_version(max_version)
-
-        # Convert current Anki version
-        year = current // 10000
-        month = (current % 10000) // 100
-        current_comparable = (year * 100) + month
-        current_display = f"{year}.{month:02d}"
-
-        # Version check logic
-        if current_comparable < min_point:
-            showWarning(
-                f"[{addon_info.name}]:\n"
-                f"This add-on requires Anki {addon_info.min_version} or newer.\n"
-                f"Your version: {current_display}\n\n"
-                "Please update Anki to a compatible version."
-            )
-            return False
-
-        if current_comparable > max_point:
-            showWarning(
-                f"[{addon_info.name}]:\n"
-                f"This add-on is tested up to Anki {addon_info.tested_version}.\n"
-                f"Your version: {current_display}\n\n"
-                "Some features may not work correctly - check for updates."
-            )
-            return True
-
-        return True
-
-    except Exception as e:
-        showWarning(
-            f"[{addon_info.name}]:\n"
-            f"Version check error: {str(e)}\n"
-            f"Config: min={getattr(addon_info, 'min_version', '?')} "
-            f"max={getattr(addon_info, 'max_version', '?')}"
+    if anki_curr_version != TESTED_ANKI_VERSION and is_first_run_for_version():
+        showInfo(
+            f"Hanzi2Pinyin was tested on Anki {TESTED_ANKI_VERSION}, but you are running {anki_curr_version}.\n"
+            "If you run into any issues, please raise an issue on GitHub."
         )
-        return True
+        set_warned_flag()
+    config = mw.addonManager.getConfig(ADDON_NAME)
+    log.info("Config: ", config)
+    return True
+
