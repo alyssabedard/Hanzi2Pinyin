@@ -49,6 +49,6 @@ def check_anki_version() -> bool:
         )
         set_warned_flag()
     config = mw.addonManager.getConfig(ADDON_NAME)
-    log.info("Config: ", config)
+    log.info(f"Config: {config}")
     return True
 

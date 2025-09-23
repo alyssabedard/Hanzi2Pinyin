@@ -10,7 +10,7 @@
 # ==================================================================
 [project]
 name = "Hanzi2Pinyin"
-release = "2025.09.21"
+release = "2025.09.22"
 description = "Anki addon that automatically converts Chinese characters (Hanzi) to ruby-annotated text with pinyin and zhuyin readings."
 authors = ["Alyssa Bédard"]
 license = "MIT"

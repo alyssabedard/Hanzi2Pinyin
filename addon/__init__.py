@@ -20,8 +20,11 @@ if DEBUG:
 
 from sys import path
 from pathlib import Path
+from typing import Optional
 
-from .utils.about import AddonInfo
+from aqt.main import AnkiQt
+
+
 
 # Return absolute path to the directory
 # containing the current Python script file
@@ -35,15 +38,22 @@ if str(addon_path) not in path:
 #showInfo("Addon is loading!") # Will display a pop-up window when Anki launches
 
 from .components.ruby_button import setup_editor_ruby_button
-from .utils import display_unimplemented_message, display_about_dialog, update_pronunciation_type, load_config, show_welcome_dialog
+from .utils import (display_unimplemented_message, display_about_dialog,
+                    update_pronunciation_type, load_config, show_welcome_dialog, get_project_info)
+#from .utils.about import get_project_info
 
-
+#
+# if TYPE_CHECKING:
+#     from aqt.main import AnkiQt
+mw: Optional["AnkiQt"] = None # Can be either an instance of the AnkiQt class or None.
 try:
     # Run normally if Anki's GUI is launched
     from aqt import mw
 except ImportError:
     # Allows running tests without Anki, as test environment won't have access to Anki's GUI components.
     mw = None
+    pass
+
 
 if mw is not None:
     # Set Anki logger if Anki GUI running
@@ -54,8 +64,7 @@ else:
     log = getLogger(__name__)
 
 
-from utils.about import AddonInfo
-ABOUT = AddonInfo()
+ABOUT = get_project_info()
 log.info(f"Addon release: {ABOUT.release}")
 log.info(f"Anki min supported version: {ABOUT.min_version}")
 log.info(f"Addon tested version: {ABOUT.tested_version}")
