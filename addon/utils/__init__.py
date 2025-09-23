@@ -10,6 +10,7 @@ from .unimplemented import display_unimplemented_message
 from .about import display_about_dialog
 from .config import update_pronunciation_type, load_config
 from .welcome import  show_welcome_dialog
+from .about import get_project_info
 
 
 __all__ = [
@@ -31,4 +32,7 @@ __all__ = [
     # Exceptions
     "CardOperationError",
     "CardNotFoundError",
+
+    # About
+    "get_project_info"
 ]
