@@ -58,7 +58,7 @@ class RubyHandler:
             showInfo(f"Error: {str(e)}")
 
 
-def add_ruby_button(buttons: list, editor: Editor, handler: RubyHandler) -> list:
+def add_ruby_button(buttons: list, editor: Editor, handler: RubyHandler) -> None:
     """
     Add Ruby conversion button to Anki's editor interface.
 
@@ -81,16 +81,16 @@ def add_ruby_button(buttons: list, editor: Editor, handler: RubyHandler) -> list
         disables=False,
     )
     buttons.append(btn)
-    return buttons
+    #return buttons
 
 
 def setup_editor_ruby_button() -> None:
     """
-    Attach your function to the hook that gets triggered
+    Attach function to the hook that gets triggered
     when the editor's buttons are being initialized.
 
     It's like telling Anki: "When you're setting up editor buttons,
-    please also run my add_ruby_button function."
+    please also run the add_ruby_button function."
     """
     handler = RubyHandler()
     editor_did_init_buttons.append(
