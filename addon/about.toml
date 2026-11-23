@@ -10,7 +10,7 @@
 # ==================================================================
 [project]
 name = "Hanzi2Pinyin"
-release = "2025.09.22"
+release = "2026.11.22"
 description = "Anki addon that automatically converts Chinese characters (Hanzi) to ruby-annotated text with pinyin and zhuyin readings."
 authors = ["Alyssa Bédard"]
 license = "MIT"
@@ -26,8 +26,8 @@ discussions = "https://github.com/alyssabedard/Hanzi2Pinyin/discussions"
 [project.anki]
 addon-id = "77106192"
 min-version = "25.09"       # Oldest supported Anki version
-max-version = "^25.09"        # Latest supported Anki version
-tested-version = "25.09"     # Manually update this when tested
+max-version = "^26.09"        # Latest supported Anki version
+tested-version = "26.09"     # Manually update this when tested
 conflicts = []              # List of any conflicting addon IDs
 #dependencies = []          # List of any required addon ID
 

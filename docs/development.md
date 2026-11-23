@@ -50,11 +50,11 @@ For development, run Anki from the terminal to see debug output:
 
 | OS | Command |
 |---------|-------------|
-| macOS | `/Library/Application Support/AnkiProgramFiles/.venv/bin/anki`|
+| macOS | `~/Library/Application Support/AnkiProgramFiles/.venv/bin/anki`|
 | Linux | `anki` |
 | Windows | `"C:\Program Files\Anki\anki.exe"` |
 
-macOS- before Anki launcher: `/Applications/Anki.app/Contents/MacOS/anki` 
+macOS without the Anki launcher: `/Applications/Anki.app/Contents/MacOS/Anki` (`make anki` falls back to this automatically)
 
 
 ## Packaging

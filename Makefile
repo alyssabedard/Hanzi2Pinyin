@@ -31,9 +31,11 @@ else
         DETECTED_OS := MacOS
         # MacOS paths
         ANKI_ADDON_DIR := $(HOME)/Library/Application Support/Anki2/addons21
-        # Anki Path Before Launcher
-        #ANKI_PATH := /Applications/Anki.app/Contents/MacOS/anki
-        ANKI_PATH := $(HOME)/Library/Application Support/AnkiProgramFiles/.venv/bin/anki
+        # Use the Anki launcher install if present, otherwise the app bundle
+        # (Anki before the launcher, or a standalone Anki.app)
+        ANKI_LAUNCHER_PATH := $(HOME)/Library/Application Support/AnkiProgramFiles/.venv/bin/anki
+        ANKI_APP_PATH := /Applications/Anki.app/Contents/MacOS/Anki
+        ANKI_PATH := $(shell if [ -x "$(ANKI_LAUNCHER_PATH)" ]; then echo "$(ANKI_LAUNCHER_PATH)"; else echo "$(ANKI_APP_PATH)"; fi)
         RM_CMD := rm -rf
         CP_CMD := cp -r
         MKDIR_CMD := mkdir -p
@@ -48,7 +50,7 @@ endif
 
 # Common variables
 ADDON_NAME := Hanzi2Pinyin
-PYTHON_CMD := python
+PYTHON_CMD := python3
 ifeq ($(DETECTED_OS),Windows)
     PYTHON_CMD := python.exe
 endif

@@ -81,7 +81,6 @@ _Looking for the Quick Start Guide? Need help? Want to raise an issue? Looking f
 
 Key benefits:
 - Works with any field name of your choosing (No restrictions)
-- Simple and reliable functionality
 - Support both Simplified and Traditional Chinese Characters 
 
 ### Planned Features
@@ -89,26 +88,7 @@ Key benefits:
 | Status | Feature                | Details                                                              |
 |--------|------------------------|----------------------------------------------------------------------|
 | 🔄     | Bulk add/remove        | Available in tools menu                                              |
-| 🔄     | Jyutping and Cantonese | Support for Cantonese pronunciation                                  |
-| 🔄     | Xiao'erjing            | Support for Arabic-Persian script (also known as Xiaor jin/Xiaojing) |
-| 🔄     | Sandhi                 | Support for phonological changes between adjacent tones _(Note 1)_   |
 
-> Note 1: Sandhi refers to how tones change when certain tones/words are next to each other in 
-> speech. For example, in Mandarin, when a hanzi with the third 
-> tone is followed by another hanzi with the third tone, 
-> the first hanzi changes to second tone instead.
-
-I plan on making additional Chinese language tools that will be 
-released as separate add-ons to maintain simplicity as 
-I prefer single-purpose add-ons.
-
-
-## Why Hanzi2Pinyin when there are other great add-ons?
-This add-on focuses on simplicity and flexibility. While many add-ons offer extensive features, 
-they often come with drawbacks:
-- Break when Anki or Qt versions are updated
-- Restrict you to specific field names
-- Bundle multiple features you might not need
 
 
 ## Contributing & Support
@@ -122,9 +102,6 @@ they often come with drawbacks:
 | [Quick Start Guide](docs/quick_start_guide.md)                           | Quick Start Guide               |
 | [Technical documentation](docs/development.md)                           | Technical documentation         |
 
-**OS**  
-This script has been primarily tested on macOS and Windows.  I currently don't have access 
-to a Linux machine for thorough testing.
 
 
 ## Acknowledgements
