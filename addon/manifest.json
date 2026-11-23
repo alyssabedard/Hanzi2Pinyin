@@ -1,4 +1,5 @@
 {
     "package": "Hanzi2Pinyin",
-    "name": "Hanzi2Pinyin"
+    "name": "Hanzi2Pinyin",
+    "min_point_version": 250900
 }
