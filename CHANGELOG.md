@@ -5,6 +5,7 @@
 
 #### Bug Fixes:
 - Fix add-on failing to load on Anki versions other than 25.09 when installed from AnkiWeb (`'NoneType' object has no attribute 'get'`). The version check now looks up the config by the add-on's install folder name and can no longer prevent the add-on from loading
+- Enforce the minimum supported Anki version (25.09) when installing the add-on from a file ([#9](https://github.com/alyssabedard/Hanzi2Pinyin/pull/9), thanks [@sinan-can-demir](https://github.com/sinan-can-demir))
 
 #### Development and tooling:
 - Update tested Anki version to 26.09 and dev dependencies `anki`/`aqt` to 26.9.4
