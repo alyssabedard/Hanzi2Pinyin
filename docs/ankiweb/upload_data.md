@@ -25,9 +25,9 @@ https://github.com/alyssabedard/Hanzi2Pinyin/issues
 ### Branches
 (For the max version of the final branch, add a '-' prefix (e.g. -2.1.66) if you wish to prevent the add-on from being downloaded on any versions newer than that number.)
 
-Supports: 23.10 to -24.12
-min-version = "23.10"       # Oldest supported Anki version
-max-version = "24.12"       # Latest supported Anki version
+Supports: 25.09 and newer
+min-version = "25.09"       # Oldest supported Anki version
+max-version = ""            # Leave empty so newer Anki versions aren't blocked
 
 ### Description
 (Markdown and basic HTML tags are supported.)

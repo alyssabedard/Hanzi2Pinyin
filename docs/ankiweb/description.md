@@ -43,8 +43,6 @@ For support check the documentation page.
 More demo on the Documentation and Quick Start Guide page.
 
 ## Planned Features
-- Jyutping and Cantonese support
-- Xiao'erjing (Xiaor jin/Xiaojing/Arabic-Persian script) support
 - Bulk add/remove 
 
 <br>

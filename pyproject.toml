@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Hanzi2Pinyin"
-version = "2025.09.22"
+version = "2026.11.22"
 description = "Anki addon that automatically converts Chinese characters (Hanzi) to ruby-annotated text with pinyin and zhuyin readings."
 authors = ["Alyssa Bédard"]
 readme = "README.md"
@@ -13,8 +13,8 @@ package-mode = false
 # Tools for development
 [tool.poetry.dependencies]
 python = "^3.13"
-anki = "^25.09.2"
-aqt = {extras = ["qt6"], version = "^25.9.2"}
+anki = "^26.9.4"
+aqt = {extras = ["qt6"], version = "^26.9.4"}
 pypinyin = "^0.55.0"
 # pypinyin = "^0.53.0"
 #tomli = "^2.1.0"
